@@ -3,6 +3,10 @@ namespace Springbox\Asset;
 
 class SpringboxAsset extends \Themosis\Asset\Asset
 {
+	public function __construct($type, array $args)
+	{
+		parent::__construct($type, $args);
+	}
 
 	/**
 	 * Localizes script assets.

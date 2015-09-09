@@ -11,6 +11,17 @@ class SpringboxAssetFactory extends \Themosis\Asset\AssetFactory
      */
 	protected static $cache = array();
 
+	public function __construct($finder)
+	{
+		parent::__construct($finder);
+		
+		$path = themosis_path('app').'config'.DS.'cachebuster'.CONFIG_EXT;
+		
+		if (file_exists($path)){
+			self::$cache = include($path);
+		}
+	}
+
 	/**
 	 * Add an asset to the application.
 	 *
