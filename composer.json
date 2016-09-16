@@ -2,8 +2,8 @@
     "name": "springbox/framework",
     "description": "Springbox Themosis Framework Classes",
     "require": {
-        "php": ">=5.4",
-        "illuminate/database": "^5.1"
+        "php": ">=5.5.9",
+        "illuminate/database": "5.2.45"
     },
     "authors": [
         {
